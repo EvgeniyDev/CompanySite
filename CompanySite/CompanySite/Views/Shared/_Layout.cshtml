@@ -8,20 +8,20 @@
 <body class="subpage">
     <div id="page-wrapper">
 
-        @await Html.PartialAsync("HeaderPartial");
+        @await Html.PartialAsync("HeaderPartial")
         <section id="content">
             <div class="container">
                 <div class="row">
                     <div class="col-9 col-12-medium">
                         @RenderBody()
                     </div>
-                    @await @Html.PartialAsync("SidebarPartial")
+                    @await Html.PartialAsync("SidebarPartial")
                 </div>
             </div>
         </section>
-        @await Html.PartialAsync("FooterPartial");
+        @await Html.PartialAsync("FooterPartial")
 
-        @await Html.PartialAsync("CopyrightPartial");
+        @await Html.PartialAsync("CopyrightPartial")
     </div>
 
     @await Html.PartialAsync("ScriptsPartial")
