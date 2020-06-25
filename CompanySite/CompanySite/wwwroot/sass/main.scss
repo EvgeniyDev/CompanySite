@@ -842,11 +842,35 @@
 	/* Admin panel and login page */
 
 	.custom {
-		padding: 15px 0;
-
+		padding: 0;
+		
 		label, a {
 			display: block;
 		}
+
+		ul {
+			margin-bottom: 0px;
+		}
+	}
+
+	.rememberMe {
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: left;
+		align-content: center;
+	}
+
+	.grid-item {
+		align-self: center;
+		margin: 0 auto;
+	}
+
+	#checkbox {
+		margin: 0 10px 4px 0;
+	}
+
+	#titleImageFile {
+		font-size: 12pt;
 	}
 
 	.img-block {
@@ -854,4 +878,8 @@
 		max-width: 100%;
 		margin: 0 auto;
 		padding: 15px 0;
+	}
+
+	.sidebar {
+		margin: 0 0 15px 0;
 	}

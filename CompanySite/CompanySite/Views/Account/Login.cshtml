@@ -14,9 +14,9 @@
                 <input type="password" asp-for="Password" />
                 <span asp-validation-for="Password"></span>
             </div>
-            <div>
-                <label asp-for="RememberMe"></label>
-                <input asp-for="RememberMe" />
+            <div class="rememberMe">
+                <input asp-for="RememberMe" class="grid-item" id="checkbox"/>
+                <label asp-for="RememberMe" class="grid-item"></label>
                 <span asp-validation-for="RememberMe"></span>
             </div>
             <div>

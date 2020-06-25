@@ -8,7 +8,7 @@ namespace CompanySite.Domain.Entities
         public string CodeWord { get; set; }
 
         [Display(Name = "Page name")]
-        public override string Title { get; set; } = "Информационная страница";
+        public override string Title { get; set; } = "Informational page";
 
         [Display(Name = "Page description")]
         public override string Text { get; set; } = string.Empty;

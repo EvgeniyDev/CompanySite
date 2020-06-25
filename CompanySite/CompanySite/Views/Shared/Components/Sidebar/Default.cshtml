@@ -1,0 +1,27 @@
+﻿@model IQueryable<ServiceItem>
+
+@if (Model?.Any() == true)
+{
+    <section>
+        <header>
+            <h2>Our Services</h2>
+        </header>
+        <ul class="link-list">
+            @foreach (var serviceItem in Model)
+            {
+                <li>
+                    <h3>
+                        <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@serviceItem.Id">
+                            @serviceItem.Title
+                        </a>
+                    </h3>
+                </li>
+                <li>
+                    <p class="sidebar">
+                        @serviceItem.Subtitle
+                    </p>
+                </li>
+            }
+        </ul>
+    </section>
+}
