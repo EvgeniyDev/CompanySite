@@ -13,25 +13,25 @@ namespace CompanySite.Domain.Entities
         [Required]
         public Guid Id { get; set; }
 
-        [Display(Name = "Заголовок")]
+        [Display(Name = "Title")]
         public virtual string Title { get; set; }
 
-        [Display(Name = "Подзаголовок")]
+        [Display(Name = "Subtitle")]
         public virtual string Subtitle { get; set; }
 
-        [Display(Name = "Полное описание")]
+        [Display(Name = "Full description")]
         public virtual string Text { get; set; }
 
-        [Display(Name = "Титульная картинка")]
+        [Display(Name = "Title image")]
         public virtual string TitleImage { get; set; }
 
-        [Display(Name = "SEO метатег Title")]
+        [Display(Name = "Title SEO-metatag")]
         public string MetaTitle { get; set; }
 
-        [Display(Name = "SEO метатег Description")]
+        [Display(Name = "Description SEO-metatag")]
         public string MetaDescription { get; set; }
 
-        [Display(Name = "SEO метатег Keywords")]
+        [Display(Name = "Keywords SEO-metatag")]
         public string MetaKeywords { get; set; }
 
         [DataType(DataType.Time)]
