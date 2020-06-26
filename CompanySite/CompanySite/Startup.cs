@@ -62,6 +62,11 @@ namespace CompanySite
             {
                 x.Conventions.Add(new AdminAreaAuthorization("Admin", "AdminArea"));
             }).SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
+
+            services.Configure<IISOptions>(options =>
+            {
+                options.ForwardClientCertificate = false;
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
