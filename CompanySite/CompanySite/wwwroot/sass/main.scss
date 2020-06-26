@@ -505,7 +505,7 @@
 		border-top: solid 1px #b5bec3;
 		box-shadow: inset 0px 1px 0px 0px #e0e4e7;
 		text-align: center;
-		padding: 45px 0 80px 0;
+		padding: 35px 0 35px 0;
 		color: #8d9ca3;
 		text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
 
@@ -842,15 +842,44 @@
 	/* Admin panel and login page */
 
 	.custom {
-		padding: 15px 0;
-
+		padding: 0;
+		
 		label, a {
 			display: block;
 		}
+
+		ul {
+			margin-bottom: 0px;
+		}
+	}
+
+	.rememberMe {
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: left;
+		align-content: center;
+	}
+
+	.grid-item {
+		align-self: center;
+		margin: 0 auto;
+	}
+
+	#checkbox {
+		margin: 0 10px 4px 0;
+	}
+
+	#titleImageFile {
+		font-size: 12pt;
 	}
 
 	.img-block {
 		display:block;
 		max-width: 100%;
 		margin: 0 auto;
+		padding: 15px 0;
+	}
+
+	.sidebar {
+		margin: 0 0 15px 0;
 	}

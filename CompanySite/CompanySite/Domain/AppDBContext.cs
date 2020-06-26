@@ -49,21 +49,21 @@ namespace CompanySite.Domain
             {
                 Id = new Guid("a7da92d3-495f-40b0-b986-4f0204ba6ea0"),
                 CodeWord = "PageIndex",
-                Title = "Главная"
+                Title = "Home"
             });
 
             builder.Entity<TextField>().HasData(new TextField
             {
                 Id = new Guid("8b4ae5ff-d5da-417a-85f4-5c6ae24c8815"),
                 CodeWord = "PageContacts",
-                Title = "Контакты"
+                Title = "Contacts"
             });
 
             builder.Entity<TextField>().HasData(new TextField
             {
                 Id = new Guid("73485868-82b5-4c0e-9d8d-5580fe9bfd55"),
                 CodeWord = "PageServices",
-                Title = "Услуги"
+                Title = "Services"
             });
         }
     }

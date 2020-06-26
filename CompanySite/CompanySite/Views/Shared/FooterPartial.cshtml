@@ -3,43 +3,18 @@
         <div class="row">
             <div class="col-8 col-12-medium">
 
-                <!-- Links -->
                 <section>
-                    <h2>Links to Important Stuff</h2>
                     <div>
                         <div class="row">
                             <div class="col-3 col-12-small">
+                                <h2>Site main pages</h2>
                                 <ul class="link-list last-child">
-                                    <li><a href="#">Neque amet dapibus</a></li>
-                                    <li><a href="#">Sed mattis quis rutrum</a></li>
-                                    <li><a href="#">Accumsan suspendisse</a></li>
-                                    <li><a href="#">Eu varius vitae magna</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                    <li><a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="">Our Services</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Contacts">Contacts</a></li>
                                 </ul>
                             </div>
-                            <div class="col-3 col-12-small">
-                                <ul class="link-list last-child">
-                                    <li><a href="#">Neque amet dapibus</a></li>
-                                    <li><a href="#">Sed mattis quis rutrum</a></li>
-                                    <li><a href="#">Accumsan suspendisse</a></li>
-                                    <li><a href="#">Eu varius vitae magna</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-3 col-12-small">
-                                <ul class="link-list last-child">
-                                    <li><a href="#">Neque amet dapibus</a></li>
-                                    <li><a href="#">Sed mattis quis rutrum</a></li>
-                                    <li><a href="#">Accumsan suspendisse</a></li>
-                                    <li><a href="#">Eu varius vitae magna</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-3 col-12-small">
-                                <ul class="link-list last-child">
-                                    <li><a href="#">Neque amet dapibus</a></li>
-                                    <li><a href="#">Sed mattis quis rutrum</a></li>
-                                    <li><a href="#">Accumsan suspendisse</a></li>
-                                    <li><a href="#">Eu varius vitae magna</a></li>
-                                </ul>
-                            </div>
+                            @await Html.PartialAsync("FooterServicesPartial")
                         </div>
                     </div>
                 </section>
@@ -47,14 +22,10 @@
             </div>
             <div class="col-4 col-12-medium imp-medium">
 
-                <!-- Blurb -->
                 <section>
-                    <h2>An Informative Text Blurb</h2>
+                    <h2>About a company site</h2>
                     <p>
-                        Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu
-                        varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi,
-                        dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh
-                        lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
+                        This site was designed for educational purposes. Company site is a site about. 
                     </p>
                 </section>
 

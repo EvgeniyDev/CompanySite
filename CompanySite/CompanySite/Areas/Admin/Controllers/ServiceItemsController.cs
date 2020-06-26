@@ -35,15 +35,13 @@ namespace CompanySite.Areas.Admin.Controllers
                 if (titleImageFile != null)
                 {
                     serviceItem.TitleImage = titleImageFile.FileName;
-                    using (var fs = new FileStream(Path.Combine(hostEnvironment.WebRootPath, "images/serviceImages/",
-                        titleImageFile.FileName), FileMode.Create))
-                    {
-                        titleImageFile.CopyTo(fs);
-                    }
-
-                    dataManager.ServiceItems.SaveServiceItem(serviceItem);
-                    return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).CutController());
+                    using var fs = new FileStream(Path.Combine(hostEnvironment.WebRootPath, "images/serviceImages/",
+                        titleImageFile.FileName), FileMode.Create);
+                    titleImageFile.CopyTo(fs);
                 }
+
+                dataManager.ServiceItems.SaveServiceItem(serviceItem);
+                return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).CutController());
             }
 
             return View(serviceItem);
